@@ -1,0 +1,13 @@
+#name {
+    font-family: 'Special Elite', cursive;
+    font-size: 40px;
+}
+#title {
+    font-size: 18px;
+}
+#background-img {
+    max-width: 100%;
+}
+#header {
+    background-color: rgb(151, 75, 3);
+}
