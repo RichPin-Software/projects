@@ -7,18 +7,19 @@ function displayIntro(siteContainer, introTextArry, introTextContainerId, introT
 
     for(let x=0;x<introTextArry.length;x++){
         // create header to display intro text
-        let h1 = document.createElement("h1");
+        let p = document.createElement("p");
         // creates user specified id for each h1 element
         // + index in introTextArray (ex: "h1-id-0", "h1-id-1", etc.)
-        h1.id = introTextId + x;
-        console.log(h1.id);
-        document.getElementById(introTextContainerId).appendChild(h1);
+        p.id = introTextId + x;
+        console.log(p.id);
+        document.getElementById(introTextContainerId).appendChild(p);
 
-        h1.innerHTML = introTextArry[x];
+        p.innerHTML = introTextArry[x];
     }
 }
 
 // Replace Intro Text Using Timer
+/*
 function replaceIntro(textIdRemove, interval, siteContainer, introTextArry, introTextContainerId, introTextId) {
     setTimeout(() => {
         // after specified interval...
@@ -27,4 +28,4 @@ function replaceIntro(textIdRemove, interval, siteContainer, introTextArry, intr
 
         displayIntro(siteContainer, introTextArry, introTextContainerId, introTextId);
     }, interval);
-}
+}*/

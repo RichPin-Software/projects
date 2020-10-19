@@ -1,0 +1,43 @@
+//TODO: create alternate setContentImage with no index parameter
+function setContentImage(imgIndex, imgContainer, imgSrc, imgId) {
+    let imageHTML = document.createElement("img");
+    let imageArray = imgSrc[imgIndex];
+    imageHTML.setAttribute("src", imageArray);
+    imageHTML.id = imgId;
+
+    document.getElementById(imgContainer).appendChild(imageHTML);
+}
+//TODO: this works! but need to make it cycle through like with setInterval
+function displayNextImage(imgSrc, imgId, delay) {
+    imgSrc.forEach((image, i) => {
+        setTimeout(() => {
+            document.getElementById(imgId).setAttribute("src", imgSrc[i]);
+        }, i * delay);
+    });
+}
+
+function introText(siteContainer, introTextString, introTextContainerId, introTextId) {
+    // create intro text container
+    let div = document.createElement("div");
+    document.getElementById(siteContainer).appendChild(div);
+    div.id = introTextContainerId;
+    // create header to display intro text
+    let text1Header = document.createElement("h1");
+    document.getElementById(introTextContainerId).appendChild(text1Header);
+    text1Header.id = introTextId;
+
+    let header = document.getElementById(introTextId);
+    // put desired text into display
+    header.innerHTML = introTextString;
+}
+/*
+function removeIntro1(textIdRemove, interval, siteContainer, introTextString, introTextContainerId, introTextId) {
+    setTimeout(() => {
+        // after specified interval...
+        // remove previous text
+        document.getElementById(textIdRemove).remove();
+        // replace with new text
+        introText(siteContainer, introTextString, introTextContainerId, introTextId);
+    }, interval);
+}
+*/
