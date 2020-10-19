@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <!-- font-family: 'Londrina Solid', cursive; -->
+    <!-- font-family: 'Londrina Shadow', cursive; -->
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="section-container home">
+            <div id="home">
+                <div class="navbar" id="nav-home">
+                    <a href="#home" class="name">Richard Pinegar</a>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                    <a href="#" id="dropdown">&#9776;</a>
+                </div>
+                <div id="intro-container"></div>
+                <div id="intro2-container"></div>
+            </div>
+        </div>
+        <div class="section-container about">
+            <div id="about"></div>
+        </div>
+        <div class="section-container portfolio">
+            <div id="portfolio"></div>
+        </div>
+        <div class="section-container contact">
+            <div id="contact">
+                <div class="email-container">
+                    <form action="#" id="contact_me">
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="emailaddress" name="emailaddress" placeholder="Enter Email">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="subject" name="subject" style="height:160px"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <input id="submit" type="submit" value="Submit">
+                      </div>
+                    </form>
+                  </div> <!-- .email-container -->
+            </div>
+            <footer>
+                <p id="copyright">&copy;2020</p>
+            </footer>
+        </div> <!-- .section-container contact -->
+    </div> <!-- .container -->
+
+    <script src="site-features.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

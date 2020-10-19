@@ -1,0 +1,333 @@
+html, body {
+  box-sizing: border-box;
+  background-color: rgb(202, 191, 191);
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding:0;
+}
+
+ul li {
+  color: #fff;
+  list-style: none;
+  float: left;
+  margin-left:20px;
+  padding-left:20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+ul {
+  position: absolute;
+  bottom:35px;
+  right:13%;
+}
+
+li a:link, li a:visited {
+  color:#fff;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: orange;
+}
+
+li a:active {
+  color: orange;
+  font-size: 30px;
+}
+
+footer {
+  position: absolute;
+  bottom: -300%;
+  width: 100%;
+  height: fit-content;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+p span {
+  font-family: Londrina solid;
+  font-weight: 400;
+}
+
+#home {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#about {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+#portfolio {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#intro-container {
+  float: left;
+  margin: 180px auto auto 13%;
+  background-image: url('../images/Hello_dark.png');
+  width: 462px;
+  height:435px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#intro2-container {
+  float: right;
+  margin: 168px 13% auto auto;
+  background-image: url('../images/WebDev.png');
+  width: 575px;
+  height:491px;
+  visibility: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#introText-container {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Special Elite', cursive;
+  color: #fff;
+  padding: 50px;
+  margin:0;
+}
+
+#introText2-container {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Special Elite', cursive;
+  color: #fff;
+}
+
+#copyright {
+  position: relative;
+  float: right;
+  margin-right: 13%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.section-container {
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  background-image: url('../images/pexels-irina-iriser-1590551.jpg');
+}
+
+.about {
+  background-image: url('../images/pexels-simon-matzinger-688660.jpg');
+}
+
+.portfolio {
+  background-image: url('../images/pexels-pixabay-414083.jpg');
+}
+
+.contact {
+  background-image: url('../images/pexels-pixabay-219998.jpg');
+}
+
+.navbar {
+  background-color: rgba(151, 75, 3, 0.8);
+  width:100%;
+  height: fit-content;
+  padding: 30px 13%;
+  position:fixed;
+  top:0;
+}
+
+.navbar #dropdown {
+  display: none;
+}
+
+.name {
+  color: #fff;
+  display:block;
+  font-size: 48px;
+  text-decoration: none;
+  font-family: 'Special Elite', cursive;
+}
+
+.email-container {
+  width:30%;
+  height: 400px;
+  position: relative;
+  top: 198px;
+  margin-left: 13%;
+  border-radius: 5px;
+  background-color: rgba(151, 75, 3, 0.8);
+  padding: 20px;
+}
+
+.message-container {
+  width:30%;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=submit] {
+  background-color: #3340b1;
+}
+
+input[type=submit]:hover {
+  background-color: #505cc5;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1125px) {
+  ul li {
+    font-size:30px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  ul li {
+    font-size: 25px;
+    margin-left: 0px;
+  }
+
+  .name {
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  ul {
+    display: none;
+  }
+
+  .navbar #dropdown {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right:70px;
+    padding:0;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+  .navbar #dropdown {
+    display:none;
+  }
+
+  .navbar {
+    text-align: center;
+    padding: 30px 15px 30px 15px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .name {
+    font-size: 30px;
+  }
+}
